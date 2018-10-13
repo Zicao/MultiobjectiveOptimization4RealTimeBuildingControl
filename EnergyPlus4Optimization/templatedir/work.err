@@ -1,0 +1,47 @@
+Program Version,EnergyPlus, Version 8.7.0-78a111df4a, YMD=2018.10.04 19:30,IDD_Version 8.7.0
+   ** Warning ** ManageSizing: The ZoneComponentLoadSummary report was requested but no sizing objects were found so that report cannot be generated.
+   ** Warning ** Site:GroundTemperature:BuildingSurface: Some values fall outside the range of 15-25C.
+   **   ~~~   ** These values may be inappropriate.  Please consult the Input Output Reference for more details.
+   ** Warning ** Schedule=ZONE CONTROL TYPE SCHED
+   **   ~~~   ** ...should include control type 4 (ThermostatSetpoint:DualSetpoint) but does not.
+   **   ~~~   ** ..reference ZoneControl:Thermostat=SPACE1-1 CONTROL
+   **   ~~~   ** ..reference ZONE=SPACE1-1
+   ** Warning ** Schedule=ZONE CONTROL TYPE SCHED
+   **   ~~~   ** ...should include control type 4 (ThermostatSetpoint:DualSetpoint) but does not.
+   **   ~~~   ** ..reference ZoneControl:Thermostat=SPACE2-1 CONTROL
+   **   ~~~   ** ..reference ZONE=SPACE2-1
+   ** Warning ** Schedule=ZONE CONTROL TYPE SCHED
+   **   ~~~   ** ...should include control type 4 (ThermostatSetpoint:DualSetpoint) but does not.
+   **   ~~~   ** ..reference ZoneControl:Thermostat=SPACE3-1 CONTROL
+   **   ~~~   ** ..reference ZONE=SPACE3-1
+   ** Warning ** Schedule=ZONE CONTROL TYPE SCHED
+   **   ~~~   ** ...should include control type 4 (ThermostatSetpoint:DualSetpoint) but does not.
+   **   ~~~   ** ..reference ZoneControl:Thermostat=SPACE4-1 CONTROL
+   **   ~~~   ** ..reference ZONE=SPACE4-1
+   ** Warning ** Schedule=ZONE CONTROL TYPE SCHED
+   **   ~~~   ** ...should include control type 4 (ThermostatSetpoint:DualSetpoint) but does not.
+   **   ~~~   ** ..reference ZoneControl:Thermostat=SPACE5-1 CONTROL
+   **   ~~~   ** ..reference ZONE=SPACE5-1
+   ** Warning ** In AirLoopHVAC VAV SYS 1 there is unbalanced exhaust air flow.
+   **   ~~~   **  During Warmup, Environment=BEIJING ANN HTG 99.6% CONDNS DB, at Simulation time=01/21 00:00 - 00:05
+   **   ~~~   **   Unless there is balancing infiltration / ventilation air flow, this will result in
+   **   ~~~   **   load due to induced outdoor air being neglected in the simulation.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ** Warning ** The following Report Variables were requested but not generated
+   **   ~~~   ** because IDF did not contain these elements or misspelled variable name -- check .rdd file
+   ************* Key=SPACE2-1, VarName=AIR SYSTEM TOTAL COOLING ENERGY, Frequency=Timestep
+   ************* Key=*, VarName=CCO2CON, Frequency=Timestep
+   ************* There are 3 unused schedules in input.
+   ************* There are 2 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 1 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 9 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1.01sec

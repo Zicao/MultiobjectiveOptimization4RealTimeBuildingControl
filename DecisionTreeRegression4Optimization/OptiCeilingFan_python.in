@@ -1,0 +1,42 @@
+# Demonstrate Dakota script interface to Python analysis (Rosenbrock)
+environment
+	graphics
+	tabular_graphics_data
+	tabular_graphics_file = 'optienergy.dat'
+method,						
+	convergence_tolerance 0.1
+	max_iterations = 1500
+	max_function_evaluations = 1500
+	coliny_ea
+	seed = 11011011
+	population_size = 50
+	fitness_type merit_function
+	mutation_type offset_normal
+	mutation_rate 1.0
+	crossover_type two_point
+	crossover_rate 0.0
+	replacement_type chc = 10
+
+variables,					
+	#id_variables = 'DecimalValue'
+	continuous_design = 5
+	lower_bounds    20  20   20 20 20                       
+	initial_point	24  24   24 24 24
+	upper_bounds    28  28   28 28 28                      
+	descriptors     'ClTemp1100' 'ClTemp1130'  'ClTemp1200' 'ClTemp1230' 'ClTemp1330'
+
+interface,							
+	fork							
+	  #analysis_drivers = 'OptiCeilingFan.py'
+# This instead for Windows:
+    analysis_drivers = 'python.exe OptiCeilingFan.py'
+	parameters_file = 'params.in'
+	results_file = 'results.out'
+#	file_tag
+#	file_save
+#	aprepro
+
+responses,				
+	num_objective_functions = 2
+	no_gradients
+	no_hessians
